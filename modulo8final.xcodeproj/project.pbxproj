@@ -13,6 +13,14 @@
 		7627C6951E896B3900BD61DD /* modulo8final.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7627C6931E896B3900BD61DD /* modulo8final.xcdatamodeld */; };
 		7627C6971E896B3900BD61DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7627C6961E896B3900BD61DD /* Assets.xcassets */; };
 		7627C69A1E896B3900BD61DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7627C6981E896B3900BD61DD /* LaunchScreen.storyboard */; };
+		7627C6A21E896BD400BD61DD /* RFS_Juan_Casco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7627C6A11E896BD400BD61DD /* RFS_Juan_Casco.ttf */; };
+		7627C6A41E89795300BD61DD /* backtextcap.png in Resources */ = {isa = PBXBuildFile; fileRef = 7627C6A31E89795300BD61DD /* backtextcap.png */; };
+		7627C6A61E89B0AB00BD61DD /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7627C6A51E89B0AB00BD61DD /* ding.mp3 */; };
+		7627C6AC1E89B85C00BD61DD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 7627C6AB1E89B85C00BD61DD /* splash.png */; };
+		7627C6AE1E8AE37000BD61DD /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627C6AD1E8AE37000BD61DD /* CoreDataStack.swift */; };
+		7627C6B01E8AE75E00BD61DD /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627C6AF1E8AE75E00BD61DD /* Usuarios.swift */; };
+		7627C6B21E8AE80900BD61DD /* Usuarios+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627C6B11E8AE80900BD61DD /* Usuarios+CoreDataProperties.swift */; };
+		7627C6B61E8B242300BD61DD /* CapturaDeInformacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627C6B51E8B242300BD61DD /* CapturaDeInformacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		7627C6961E896B3900BD61DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7627C6991E896B3900BD61DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7627C69B1E896B3900BD61DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7627C6A11E896BD400BD61DD /* RFS_Juan_Casco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RFS_Juan_Casco.ttf; path = ../RFS_Juan_Casco.ttf; sourceTree = "<group>"; };
+		7627C6A31E89795300BD61DD /* backtextcap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backtextcap.png; path = ../backtextcap.png; sourceTree = "<group>"; };
+		7627C6A51E89B0AB00BD61DD /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		7627C6AB1E89B85C00BD61DD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		7627C6AD1E8AE37000BD61DD /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		7627C6AF1E8AE75E00BD61DD /* Usuarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
+		7627C6B11E8AE80900BD61DD /* Usuarios+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuarios+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7627C6B51E8B242300BD61DD /* CapturaDeInformacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturaDeInformacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +56,8 @@
 		7627C6801E896B3900BD61DD = {
 			isa = PBXGroup;
 			children = (
+				7627C6B11E8AE80900BD61DD /* Usuarios+CoreDataProperties.swift */,
+				7627C6AF1E8AE75E00BD61DD /* Usuarios.swift */,
 				7627C68B1E896B3900BD61DD /* modulo8final */,
 				7627C68A1E896B3900BD61DD /* Products */,
 			);
@@ -56,6 +74,10 @@
 		7627C68B1E896B3900BD61DD /* modulo8final */ = {
 			isa = PBXGroup;
 			children = (
+				7627C6A11E896BD400BD61DD /* RFS_Juan_Casco.ttf */,
+				7627C6A31E89795300BD61DD /* backtextcap.png */,
+				7627C6A51E89B0AB00BD61DD /* ding.mp3 */,
+				7627C6AB1E89B85C00BD61DD /* splash.png */,
 				7627C68C1E896B3900BD61DD /* AppDelegate.swift */,
 				7627C68E1E896B3900BD61DD /* ViewController.swift */,
 				7627C6901E896B3900BD61DD /* Main.storyboard */,
@@ -63,6 +85,8 @@
 				7627C6981E896B3900BD61DD /* LaunchScreen.storyboard */,
 				7627C69B1E896B3900BD61DD /* Info.plist */,
 				7627C6931E896B3900BD61DD /* modulo8final.xcdatamodeld */,
+				7627C6AD1E8AE37000BD61DD /* CoreDataStack.swift */,
+				7627C6B51E8B242300BD61DD /* CapturaDeInformacion.swift */,
 			);
 			path = modulo8final;
 			sourceTree = "<group>";
@@ -99,6 +123,7 @@
 				TargetAttributes = {
 					7627C6881E896B3900BD61DD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QE6F47T37T;
 					};
 				};
 			};
@@ -125,8 +150,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7627C6A41E89795300BD61DD /* backtextcap.png in Resources */,
+				7627C6AC1E89B85C00BD61DD /* splash.png in Resources */,
 				7627C69A1E896B3900BD61DD /* LaunchScreen.storyboard in Resources */,
+				7627C6A61E89B0AB00BD61DD /* ding.mp3 in Resources */,
 				7627C6971E896B3900BD61DD /* Assets.xcassets in Resources */,
+				7627C6A21E896BD400BD61DD /* RFS_Juan_Casco.ttf in Resources */,
 				7627C6921E896B3900BD61DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7627C6951E896B3900BD61DD /* modulo8final.xcdatamodeld in Sources */,
+				7627C6B01E8AE75E00BD61DD /* Usuarios.swift in Sources */,
 				7627C68F1E896B3900BD61DD /* ViewController.swift in Sources */,
 				7627C68D1E896B3900BD61DD /* AppDelegate.swift in Sources */,
+				7627C6B61E8B242300BD61DD /* CapturaDeInformacion.swift in Sources */,
+				7627C6B21E8AE80900BD61DD /* Usuarios+CoreDataProperties.swift in Sources */,
+				7627C6AE1E8AE37000BD61DD /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = modulo8final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Industrias-Peta.modulo8final";
@@ -264,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = modulo8final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Industrias-Peta.modulo8final";

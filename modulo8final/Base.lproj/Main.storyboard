@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RFS_Juan_Casco.ttf">
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+            <string>RomanceFatalSerif</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="modulo8final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +32,211 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="backtextcap.png" translatesAutoresizingMaskIntoConstraints="NO" id="4RV-K3-D8X">
+                                <rect key="frame" x="250" y="131" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5j9-ix-Pam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bw-ui-z4Q">
+                                <rect key="frame" x="260" y="529" width="80" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="KyD-94-Gai"/>
+                                    <constraint firstAttribute="height" constant="31" id="x2H-NK-l2S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="17"/>
+                                <state key="normal" title="Siguiente" backgroundImage="backtextcap.png"/>
+                                <connections>
+                                    <action selector="btnSiguiente:" destination="BYZ-38-t0r" eventType="touchDown" id="pPn-J1-aV7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa tu numero de telefono a 10 digitos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thN-on-Hjy">
+                                <rect key="frame" x="165" y="70" width="270" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="A65-7f-shh"/>
+                                    <constraint firstAttribute="height" constant="19" id="PV7-lC-WmC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4RV-K3-D8X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Wg-0A-gfx"/>
+                            <constraint firstItem="0bw-ui-z4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9qt-7n-aKI"/>
+                            <constraint firstItem="thN-on-Hjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AGD-pK-Sxr"/>
+                            <constraint firstItem="4RV-K3-D8X" firstAttribute="top" secondItem="thN-on-Hjy" secondAttribute="bottom" constant="42" id="UaM-Jc-kFf"/>
+                            <constraint firstItem="thN-on-Hjy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="k3J-an-fy8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0bw-ui-z4Q" secondAttribute="bottom" constant="40" id="nAu-hx-goD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UITextFieldTelefono" destination="4RV-K3-D8X" id="esK-kJ-cZn"/>
+                        <outlet property="outletBtnSiguiente" destination="0bw-ui-z4Q" id="k0K-Qo-Kkb"/>
+                        <segue destination="SiR-hC-DcA" kind="show" identifier="CapturaDatosSegue" id="gNu-hA-q5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="310" y="338"/>
+        </scene>
+        <!--Captura De Informacion-->
+        <scene sceneID="rBL-0t-T7N">
+            <objects>
+                <viewController id="SiR-hC-DcA" customClass="CapturaDeInformacion" customModule="modulo8final" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="72v-3P-7qg"/>
+                        <viewControllerLayoutGuide type="bottom" id="yHa-Cp-Hck"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f3c-rI-Pji">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBq-fm-cpp" userLabel="Background Scroll View">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoge tu contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUz-Nn-QMR">
+                                        <rect key="frame" x="223" y="15" width="115" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="Mhp-2s-paK"/>
+                                            <constraint firstAttribute="height" constant="21" id="eb5-SS-30y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="****" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-zN-NyT">
+                                        <rect key="frame" x="232" y="46" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9EO-ZZ-CjN"/>
+                                            <constraint firstAttribute="width" constant="97" id="AJ1-sw-os0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirma tu contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-cF-Ma7">
+                                        <rect key="frame" x="217" y="86" width="127" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="127" id="103-kf-XOt"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="2g0-au-VFf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="XLE-2X-USl"/>
+                                            <constraint firstAttribute="height" constant="21" id="faf-aY-F87"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="****" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZU-Q3-Sb6">
+                                        <rect key="frame" x="232" y="117" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="PZl-5f-R15"/>
+                                            <constraint firstAttribute="width" constant="97" id="n8b-Uu-dy4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce tu correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lO-ZJ-eJR">
+                                        <rect key="frame" x="199" y="157" width="163" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="0F3-G9-nfK"/>
+                                            <constraint firstAttribute="width" constant="163" id="mte-Lg-VFI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="usuario@mail.com" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-Bg-MKR">
+                                        <rect key="frame" x="105" y="188" width="350" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="YUM-Yq-gUX"/>
+                                            <constraint firstAttribute="height" constant="30" id="g86-Uz-PEc"/>
+                                            <constraint firstAttribute="width" constant="350" id="l0O-by-ghG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="utd-Xy-IYR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verifica tú correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2a-jK-AQu">
+                                        <rect key="frame" x="203" y="228" width="154" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="154" id="310-SY-o2n"/>
+                                            <constraint firstAttribute="height" constant="21" id="eQM-iS-jey"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v10-DL-0Z7">
+                                        <rect key="frame" x="105" y="259" width="350" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="U8R-H2-ELt"/>
+                                            <constraint firstAttribute="height" constant="30" id="YFt-CG-dvy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9O-jU-IM4">
+                                        <rect key="frame" x="240" y="351" width="81" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="921-bF-DEw"/>
+                                            <constraint firstAttribute="width" constant="81" id="B0d-kf-If9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RomanceFatalSerif" family="Romance Fatal Serif" pointSize="16"/>
+                                        <state key="normal" title="Finalizar" backgroundImage="backtextcap.png"/>
+                                        <connections>
+                                            <action selector="actionBtnFinalizar:" destination="SiR-hC-DcA" eventType="touchUpInside" id="5qi-JM-NYE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qUz-Nn-QMR" firstAttribute="top" secondItem="OBq-fm-cpp" secondAttribute="top" constant="15" id="6XY-le-NeB"/>
+                                    <constraint firstItem="0LR-cF-Ma7" firstAttribute="top" secondItem="IQM-zN-NyT" secondAttribute="bottom" constant="10" id="FSa-n9-cuh"/>
+                                    <constraint firstItem="qUz-Nn-QMR" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="Fti-DH-jOz"/>
+                                    <constraint firstItem="V9O-jU-IM4" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="QgV-9t-94j"/>
+                                    <constraint firstItem="4lO-ZJ-eJR" firstAttribute="top" secondItem="GZU-Q3-Sb6" secondAttribute="bottom" constant="10" id="YFD-qB-StA"/>
+                                    <constraint firstItem="G2a-jK-AQu" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="ZP4-CM-ZTb"/>
+                                    <constraint firstItem="V9O-jU-IM4" firstAttribute="top" secondItem="v10-DL-0Z7" secondAttribute="bottom" constant="62" id="Zvv-lN-Lkg"/>
+                                    <constraint firstItem="ACY-Bg-MKR" firstAttribute="top" secondItem="4lO-ZJ-eJR" secondAttribute="bottom" constant="10" id="bX2-r9-ygQ"/>
+                                    <constraint firstItem="v10-DL-0Z7" firstAttribute="top" secondItem="G2a-jK-AQu" secondAttribute="bottom" constant="10" id="dx6-1j-ehI"/>
+                                    <constraint firstItem="IQM-zN-NyT" firstAttribute="top" secondItem="qUz-Nn-QMR" secondAttribute="bottom" constant="10" id="gXx-y2-Wwo"/>
+                                    <constraint firstItem="4lO-ZJ-eJR" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="iWT-AT-ofc"/>
+                                    <constraint firstItem="G2a-jK-AQu" firstAttribute="top" secondItem="ACY-Bg-MKR" secondAttribute="bottom" constant="10" id="jya-KB-7eP"/>
+                                    <constraint firstItem="IQM-zN-NyT" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="lK9-E5-2JC"/>
+                                    <constraint firstItem="v10-DL-0Z7" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="q2D-U4-DNE"/>
+                                    <constraint firstItem="0LR-cF-Ma7" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="vA1-wg-Qms"/>
+                                    <constraint firstItem="GZU-Q3-Sb6" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="wGc-be-tcU"/>
+                                    <constraint firstItem="ACY-Bg-MKR" firstAttribute="centerX" secondItem="OBq-fm-cpp" secondAttribute="centerX" id="wuc-cx-qJm"/>
+                                    <constraint firstItem="GZU-Q3-Sb6" firstAttribute="top" secondItem="0LR-cF-Ma7" secondAttribute="bottom" constant="10" id="yX5-nn-ktW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yHa-Cp-Hck" firstAttribute="top" secondItem="OBq-fm-cpp" secondAttribute="bottom" id="d20-kx-uUz"/>
+                            <constraint firstItem="OBq-fm-cpp" firstAttribute="top" secondItem="72v-3P-7qg" secondAttribute="bottom" id="fBR-fW-1uT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OBq-fm-cpp" secondAttribute="trailing" id="sM0-OM-ieP"/>
+                            <constraint firstItem="OBq-fm-cpp" firstAttribute="leading" secondItem="f3c-rI-Pji" secondAttribute="leadingMargin" id="tZT-vz-ysh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundScrollView" destination="OBq-fm-cpp" id="nN5-jd-dac"/>
+                        <outlet property="confirmaContraseña" destination="GZU-Q3-Sb6" id="z2x-5y-AZt"/>
+                        <outlet property="confirmaEMail" destination="v10-DL-0Z7" id="SFP-4F-RyR"/>
+                        <outlet property="contraseña" destination="IQM-zN-NyT" id="cGH-Bl-kvI"/>
+                        <outlet property="email" destination="ACY-Bg-MKR" id="8r2-NA-tCj"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="IrPrimerPantalla1" id="0EP-XF-fOt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1u-g8-Rwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backtextcap.png" width="200" height="60"/>
+    </resources>
 </document>
