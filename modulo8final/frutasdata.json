@@ -1,0 +1,40 @@
+{
+    "frutas":[
+ {
+    "titulo":"Carambola",
+    "imagen":"carambola.png"
+ },
+ {
+    "titulo":"Chicozapote",
+    "imagen":"chicozapote.png"
+ },
+ {
+    "titulo":"Durazno",
+    "imagen":"durazno.png"
+ },
+ {
+    "titulo":"Granada",
+    "imagen":"granada.png"
+ },
+ {
+    "titulo":"Higo",
+    "imagen":"higo.png"
+ },
+ {
+    "titulo":"Lychee",
+    "imagen":"lychee.png"
+ },
+ {
+    "titulo":"Mamey",
+    "imagen":"mamey.png"
+ },
+ {
+    "titulo":"Pitahaya",
+    "imagen":"pitahaya.png"
+ },
+ {
+    "titulo":"Logout",
+    "imagen":"logout.png"
+ }
+]
+}
