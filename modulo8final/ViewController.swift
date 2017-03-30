@@ -35,13 +35,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 if usuarios.count > 0 {
                     print("El número de telefóno ya está registrado")
                     // saltamos al menu de cuadricula
+                    self.performSegueWithIdentifier("MuestaCuadrosSegue", sender: self)
                 } else {
                     print("El número de telefóno no esta registrado")
-                    self.performSegueWithIdentifier("CapturaDatosSegue", sender: self)
-                    print("Salimos del boton")
-
                     // saltamos a la captura de datos
+                    self.performSegueWithIdentifier("CapturaDatosSegue", sender: self)
                 }
+                print("Salimos del boton")
                 
             } catch let error{
                 print(error)
@@ -61,10 +61,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var ding:AVAudioPlayer = AVAudioPlayer()
     
-    lazy var directorioDocuments:NSURL = {
-        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count - 1] // devuelve el ultimo, [0] regresa el primero
-    }()
+    //lazy var directorioDocuments:NSURL = {
+    //    let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+    //    return urls[urls.count - 1] // devuelve el ultimo, [0] regresa el primero
+    //}()
 
     
     override func viewDidLoad() {
@@ -77,10 +77,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.escondeTeclado))
         view.addGestureRecognizer(tap)
         
-        let destino = directorioDocuments.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
-        print(">>>")
-        print(destino)
-
+        //let destino = directorioDocuments.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
+        //print(">>>")
+        //print(destino)
     }
 
     // En este view controler solo tengo un uitextfield no es necesario diferenciarlo

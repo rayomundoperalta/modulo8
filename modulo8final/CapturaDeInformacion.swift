@@ -20,7 +20,7 @@ class CapturaDeInformacion: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var confirmaEMail: UITextField!
     
     @IBOutlet weak var backgroundScrollView: UIScrollView!
-    
+
     @IBAction func actionBtnFinalizar(sender: UIButton) {
         var contraseñaOK: Bool = false
         var emailOK: Bool = false
@@ -71,6 +71,8 @@ class CapturaDeInformacion: UIViewController, UITextFieldDelegate {
         }
     }
     
+    var tecladoUP:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -91,16 +93,21 @@ class CapturaDeInformacion: UIViewController, UITextFieldDelegate {
     
     func apareceTeclado(notification:NSNotification) {
         print("keyboard will show")
-        ajustandoAltura(true, notification: notification)
+        if !tecladoUP {
+            tecladoUP = true
+            ajustandoAltura(true, notification: notification)
+        }
     }
     
     func desapareceTeclado(notification:NSNotification) {
         print("keyboard will hide")
-        ajustandoAltura(false, notification: notification)
+        if tecladoUP {
+            tecladoUP = false
+            ajustandoAltura(false, notification: notification)
+        }
     }
     
     func ajustandoAltura(show:Bool, notification:NSNotification) {
-        
         let userInfo = notification.userInfo!
         
         let keyboardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
@@ -110,7 +117,6 @@ class CapturaDeInformacion: UIViewController, UITextFieldDelegate {
         backgroundScrollView.contentInset.bottom += changeInHeight
         
         backgroundScrollView.scrollIndicatorInsets.bottom += changeInHeight
-        
     }
     
     func verificalEMail(emailAddr: String) -> Bool {
@@ -185,7 +191,6 @@ class CapturaDeInformacion: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -196,5 +201,4 @@ class CapturaDeInformacion: UIViewController, UITextFieldDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

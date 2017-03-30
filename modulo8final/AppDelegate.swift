@@ -14,9 +14,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var directorioDocuments:NSURL = {
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+        return urls[urls.count - 1] // devuelve el ultimo, [0] regresa el primero
+    }()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Override point for customization after application launch.
+        // copiar el json que se agregó como recurso, a la ubicacion documents
+        // 1. encontrar la base de datos como recurso
+        let origen = NSBundle.mainBundle().pathForResource("frutasdata", ofType: "json")
+        print(origen)
+        // 2. obten la ubicación destino
+        let destino = directorioDocuments.URLByAppendingPathComponent("frutas.json")
+        print(">>>")
+        print(destino)
+        // 3. validar si el json no existe en el destino
+        if NSFileManager.defaultManager().fileExistsAtPath(destino.path!)
+        {
+            return true
+        }
+        else { // 4. copiar el json origen al destino
+            do {
+                try NSFileManager.defaultManager().copyItemAtPath(origen!, toPath: destino.path!)
+            }
+            catch {
+                print("ya valio")
+                abort()
+            }
+        }
         return true
     }
 
